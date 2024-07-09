@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luchhen's Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>  
 <body>
     <header>
-        <a href="#" class="logo">Port<span>Folio.</span></a>
+        <a href="#" class="logo">Lu<span>Xen.</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar"> 
             <li><a href="#home">Home</a></li>
@@ -38,8 +42,8 @@
             <h2>I am a <span class="role"></span> </h2>
             <p>I'm a Assistant Network and System Engineer and here is my portfolio website. Here you'll learn about my journey as a System Engineer.</p>
             <a href="assets/cv.pdf" class="btn" download="luchhen_CV.pdf">Download CV</a>
-            <div class="btn-pink" id="btn">Hire me</div>
-            <div class="absolute fagfgided-text">Luchhen Lama</div>
+            <div class="btn-pink" id="btn" ><a href="mailto:luchhenl@gmail.com" style="color: white;">Hire Me</a></div>
+            <!-- <div class="absolute fagfgided-text">Luchhen Lama</div> -->
         </div>
     </section>
     <section class="about" id="about">
@@ -72,7 +76,7 @@
                         <span>luchhenl@gmail.com</span>
                     </div>
                 </div>
-                <a href="#" class="btn">Download CV</a>
+                <a href="assets/cv.pdf" class="btn" download="luchhen_CV.pdf">Download CV</a>
             </div>
         </div>
     </section>
@@ -143,15 +147,27 @@
     </section>
     <section class="contact" id="contact">
         <div class="heading">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <!-- <span>Connect With Us</span> -->
         </div>
         <div class="contact-form">
-            <form action="#">
+            <!-- <form action="#">
                 <input type="text" placeholder="Your Name">
                 <input type="Email" placeholder="Your Email">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here...."></textarea>
                 <input type="button" value="Send" class="contact-button"> 
+            </form> -->
+            <form action="send_mail.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">SUBMIT</button>
             </form>
         </div>
     </section>
@@ -165,7 +181,7 @@
         </div>
     </div>
     <div class="copyright">
-        &#169; PortFolio | All Right Reserved
+        &#169; Luchhen's Website | All Right Reserved
     </div> 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
